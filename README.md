@@ -4,8 +4,15 @@ NC1 기간에 한국 iOS 개발자를 위한 커뮤니티 앱을 기획하고,
 로컬 메모장 기능과 블로그 UI를 구현했습니다. 
 
 Local app supports memo and partial blog features.
-<img width="429" alt="image" src="https://user-images.githubusercontent.com/102859746/171984555-5d87f356-436b-4f30-bbfd-277fb358e80c.png">
-<img width="431" alt="image" src="https://user-images.githubusercontent.com/102859746/171984577-b5e89417-01f9-4d60-b5cf-7902861d78d8.png">
+
+
+<div class="row">
+    <img width="200" alt="image" src="https://user-images.githubusercontent.com/102859746/171984555-5d87f356-436b-4f30-bbfd-277fb358e80c.png">
+    <img width="200" alt="image" src="https://user-images.githubusercontent.com/102859746/171984577-b5e89417-01f9-4d60-b5cf-7902861d78d8.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/102859746/171985101-23b6b31a-cd11-4db1-92db-16c33f64fc00.png">
+
+</div>
+
 
 
 # NC1 기간 동안 만든 기능 
