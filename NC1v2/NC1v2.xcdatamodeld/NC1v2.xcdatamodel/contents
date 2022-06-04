@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Article" representedClassName="Article" syncable="YES" codeGenerationType="class">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isLiked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isPublished" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lastEditedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="publishedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="reply" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Reply" inverseName="article" inverseEntity="Reply"/>
+    </entity>
+    <entity name="Block" representedClassName="Block" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Entity" representedClassName="Entity" isAbstract="YES" syncable="YES" codeGenerationType="class"/>
+    <entity name="Entity1" representedClassName="Entity1" isAbstract="YES" syncable="YES" codeGenerationType="class"/>
+    <entity name="Post" representedClassName="Post" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="postId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="block" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="block" inverseEntity="Post"/>
+    </entity>
+    <entity name="Reply" representedClassName="Reply" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="postId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="article" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Article" inverseName="reply" inverseEntity="Article"/>
+    </entity>
+    <elements>
+        <element name="Article" positionX="-45" positionY="9" width="128" height="178"/>
+        <element name="Block" positionX="118.30078125" positionY="238.265625" width="128" height="88"/>
+        <element name="Post" positionX="-189.4609375" positionY="11.0625" width="128" height="88"/>
+        <element name="Reply" positionX="-172.33203125" positionY="202.12109375" width="128" height="89"/>
+        <element name="Entity" positionX="-27" positionY="153" width="128" height="29"/>
+        <element name="Entity1" positionX="-18" positionY="162" width="128" height="29"/>
+    </elements>
+</model>
