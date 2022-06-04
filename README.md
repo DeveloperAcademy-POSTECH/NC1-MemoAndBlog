@@ -9,8 +9,6 @@ Local app supports memo and partial blog features.
 <div class="row">
     <img width="200" alt="image" src="https://user-images.githubusercontent.com/102859746/171984555-5d87f356-436b-4f30-bbfd-277fb358e80c.png">
     <img width="200" alt="image" src="https://user-images.githubusercontent.com/102859746/171984577-b5e89417-01f9-4d60-b5cf-7902861d78d8.png">
-  <img width="200" alt="image" src="https://user-images.githubusercontent.com/102859746/171985101-23b6b31a-cd11-4db1-92db-16c33f64fc00.png">
-
 </div>
 
 
